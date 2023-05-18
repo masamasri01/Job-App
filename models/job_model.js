@@ -14,9 +14,13 @@ const jobSchema = new Schema({
     requirements: {
         type: Array,
     }, 
-     salaryRange: {
+    location:{
+        type:String
+    },
+     salary: {
          type: Number,
- }}
+     }
+}
     
 );
 
