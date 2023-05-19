@@ -3,6 +3,24 @@ Nodejs & MongoDB.
 
 Roaa Barq , Masa Abu Odeh and Masa Masri.
 
+* npm packages used:.
+  "body-parser".
+  "express".
+  "mongoose".
+  "multer".
+  ___________________.
+* Models:.
+  Application Model.
+  Job Model.
+  Saved Jobs Model.
+  ____________________.
+ *  How our code execute? .
+
+*index.js -> app.js -> router -> controller -> services.
+In controllers, We have function that handle request & response.
+In services, all the database operation happens like fetching, Insertion, Deletion.
+  
+
 1- CRUD Operations: The API must implement basic CRUD operations on the database to enable the creation, retrieval, update, and deletion of job listings, and job applications.
 
 *CRUD on jobs:
@@ -85,6 +103,13 @@ router.get('/applications/:id/resume',UserController.getResumeOfSpecificApplicat
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/c1cd2b5d-f3bc-43ae-a111-4243b19604fc)
 
 
+______________________________________________________________________________________________________
+______________________________________________________________________________________________________
+if a user wants to retrieve all its applications, by its email since email is defined unique.
+router.get('/applications/:email',UserController.getMyApplicationsByEmail);
 
+![image](https://github.com/masamasri01/Job-App/assets/93089580/65439dd5-70f2-448d-8bf1-3d7f670c2e7b)
+
+![image](https://github.com/masamasri01/Job-App/assets/93089580/55dae1d8-47d3-41f7-8ba1-12dfb6588f56)
 
 
