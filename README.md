@@ -16,14 +16,14 @@ Roaa Barq , Masa Abu Odeh and Masa Masri.
   ____________________<br />
  *  How our code execute? <br />
 
-*index.js -> app.js -> router -> controller -> services.<br />
+* index.js -> app.js -> router -> controller -> services.<br />
 In controllers, We have function that handle request & response.<br />
 In services, all the database operation happens like fetching, Insertion, Deletion.<br />
   
 ___________________________________________________________________________________________________________________________________<br />
 1- CRUD Operations: The API must implement basic CRUD operations on the database to enable the creation, retrieval, update, and deletion of job listings, and job applications.<br />
 
-*CRUD on jobs:<br />
+* CRUD on jobs:<br />
 router.post("/addJob",UserController.addJob);  ///create.<br />
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/33bfad57-e3d1-4282-8470-fd6dab77b5b3)
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/103834e1-6372-427a-996d-118236ae8f5b)
@@ -43,13 +43,13 @@ router.delete('/jobs/:id',UserController.deleteJob); //delete.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/ddc74217-f138-4884-a17e-9f6a68128fb7)
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
-*Job Listings:.<br />
+* Job Listings:.<br />
 Get http://localhost:3001/jobs.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/cea28bb8-6fe9-4f5c-bda4-2e3ca29559e5)
 
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
-*Job Search Functionality: Job seekers will be able to search for jobs using filters such as 
+* Job Search Functionality: Job seekers will be able to search for jobs using filters such as 
 job title, location, and salary range. They will also be able to save job searches for future 
 reference.<br />
 http://localhost:3001/jobs?jobTitle=engineer&minSalary=50000&maxSalary=100000
@@ -71,7 +71,7 @@ jobs seaches are stored in savedJobs Collection.
 
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
-*Applying for Jobs
+* Applying for Jobs
 
 1- CRUD ops on applications:.<br />
 1-create =apply for a job using POST.<br />
@@ -93,12 +93,12 @@ http://localhost:3001/applicaions/64675c45748f32db9b42bd5b.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/937bf6e8-d9a8-44e7-b1fc-135f6aa97bc5)
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
-*get all Applications:.
+* get all Applications:.
 router.get('/applications',UserController.getAllApplications);.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/d8147b68-7f9c-40bf-be1b-1934099ef700)
 
 
-*in order to download a resume of specific application as pdf file, by its id:.
+* in order to download a resume of specific application as pdf file, by its id:.
 router.get('/applications/:id/resume',UserController.getResumeOfSpecificApplication ).
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/c1cd2b5d-f3bc-43ae-a111-4243b19604fc)
 
