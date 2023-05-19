@@ -20,7 +20,7 @@ Roaa Barq , Masa Abu Odeh and Masa Masri.
 In controllers, We have function that handle request & response.<br />
 In services, all the database operation happens like fetching, Insertion, Deletion.<br />
   
-
+___________________________________________________________________________________________________________________________________<br />
 1- CRUD Operations: The API must implement basic CRUD operations on the database to enable the creation, retrieval, update, and deletion of job listings, and job applications.<br />
 
 *CRUD on jobs:<br />
