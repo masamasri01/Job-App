@@ -1,10 +1,11 @@
-#Job-App
-#Nodejs
+#Job-App.
+Nodejs & MongoDB.
+
 Roaa Barq , Masa Abu Odeh and Masa Masri.
 
 1- CRUD Operations: The API must implement basic CRUD operations on the database to enable the creation, retrieval, update, and deletion of job listings, and job applications.
 
-* CRUD on jobs:
+*CRUD on jobs:
 router.post("/addJob",UserController.addJob);  ///create.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/33bfad57-e3d1-4282-8470-fd6dab77b5b3)
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/103834e1-6372-427a-996d-118236ae8f5b)
@@ -24,7 +25,13 @@ router.delete('/jobs/:id',UserController.deleteJob); //delete.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/ddc74217-f138-4884-a17e-9f6a68128fb7)
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
-* Job Search Functionality: Job seekers will be able to search for jobs using filters such as 
+*Job Listings:.
+Get http://localhost:3001/jobs.
+![image](https://github.com/masamasri01/Job-App/assets/93089580/cea28bb8-6fe9-4f5c-bda4-2e3ca29559e5)
+
+______________________________________________________________________________________________________
+______________________________________________________________________________________________________
+*Job Search Functionality: Job seekers will be able to search for jobs using filters such as 
 job title, location, and salary range. They will also be able to save job searches for future 
 reference.
 http://localhost:3001/jobs?jobTitle=engineer&minSalary=50000&maxSalary=100000
@@ -63,6 +70,20 @@ http://localhost:3001/applicaions/64675c45748f32db9b42bd5b.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/af0425b6-f242-41cc-b629-67d23848a8c9)
 
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/d8fcab5f-30f1-41d2-a52a-88d0170e5d2c)
+
+4- delete.
+![image](https://github.com/masamasri01/Job-App/assets/93089580/937bf6e8-d9a8-44e7-b1fc-135f6aa97bc5)
+______________________________________________________________________________________________________
+______________________________________________________________________________________________________
+*get all Applications:.
+router.get('/applications',UserController.getAllApplications);.
+![image](https://github.com/masamasri01/Job-App/assets/93089580/d8147b68-7f9c-40bf-be1b-1934099ef700)
+
+
+*in order to download a resume of specific application as pdf file, by its id:.
+router.get('/applications/:id/resume',UserController.getResumeOfSpecificApplication ).
+![image](https://github.com/masamasri01/Job-App/assets/93089580/c1cd2b5d-f3bc-43ae-a111-4243b19604fc)
+
 
 
 
