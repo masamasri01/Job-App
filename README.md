@@ -3,12 +3,12 @@ Nodejs & MongoDB.
 
 Roaa Barq , Masa Abu Odeh and Masa Masri.
 
-* npm packages used:./n
-  1-"body-parser"./n
-  2-"express"./n
-  3-"mongoose"./n
-  3-"multer"./n
-  ___________________./n
+* npm packages used:.<br />
+  1-"body-parser".<br />
+  2-"express".<br />
+  3-"mongoose".<br />
+  3-"multer".
+  __________________.<br />
 * Models:./n
   Application Model./n
   Job Model./n
