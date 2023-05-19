@@ -7,13 +7,13 @@ Roaa Barq , Masa Abu Odeh and Masa Masri.
   1-"body-parser".<br />
   2-"express".<br />
   3-"mongoose".<br />
-  3-"multer".
-  __________________.<br />
+  3-"multer".<br />
+  ____________________<br />
 * Models:.<br />
   Application Model.<br />
   Job Model.<br />
   Saved Jobs Model<br />
-  ____________________.<br />
+  ____________________<br />
  *  How our code execute? <br />
 
 *index.js -> app.js -> router -> controller -> services.<br />
