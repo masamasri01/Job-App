@@ -3,17 +3,17 @@ Nodejs & MongoDB.
 
 Roaa Barq , Masa Abu Odeh and Masa Masri.
 
-* npm packages used:.
-  1-"body-parser".
-  2-"express".
-  3-"mongoose".
-  3-"multer".
-  ___________________.\n
-* Models:.
-  Application Model.
-  Job Model.
-  Saved Jobs Model.
-  ____________________.
+* npm packages used:./n
+  1-"body-parser"./n
+  2-"express"./n
+  3-"mongoose"./n
+  3-"multer"./n
+  ___________________./n
+* Models:./n
+  Application Model./n
+  Job Model./n
+  Saved Jobs Model./n
+  ____________________./n
  *  How our code execute? .
 
 *index.js -> app.js -> router -> controller -> services.
