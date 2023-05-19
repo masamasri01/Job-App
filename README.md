@@ -9,22 +9,22 @@ Roaa Barq , Masa Abu Odeh and Masa Masri.
   3-"mongoose".<br />
   3-"multer".
   __________________.<br />
-* Models:./n
-  Application Model./n
-  Job Model./n
-  Saved Jobs Model./n
-  ____________________./n
- *  How our code execute? .
+* Models:.<br />
+  Application Model.<br />
+  Job Model.<br />
+  Saved Jobs Model<br />
+  ____________________.<br />
+ *  How our code execute? <br />
 
-*index.js -> app.js -> router -> controller -> services.
-In controllers, We have function that handle request & response.
-In services, all the database operation happens like fetching, Insertion, Deletion.
+*index.js -> app.js -> router -> controller -> services.<br />
+In controllers, We have function that handle request & response.<br />
+In services, all the database operation happens like fetching, Insertion, Deletion.<br />
   
 
-1- CRUD Operations: The API must implement basic CRUD operations on the database to enable the creation, retrieval, update, and deletion of job listings, and job applications.
+1- CRUD Operations: The API must implement basic CRUD operations on the database to enable the creation, retrieval, update, and deletion of job listings, and job applications.<br />
 
-*CRUD on jobs:
-router.post("/addJob",UserController.addJob);  ///create.
+*CRUD on jobs:<br />
+router.post("/addJob",UserController.addJob);  ///create.<br />
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/33bfad57-e3d1-4282-8470-fd6dab77b5b3)
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/103834e1-6372-427a-996d-118236ae8f5b)
 
@@ -43,7 +43,7 @@ router.delete('/jobs/:id',UserController.deleteJob); //delete.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/ddc74217-f138-4884-a17e-9f6a68128fb7)
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
-*Job Listings:.
+*Job Listings:.<br />
 Get http://localhost:3001/jobs.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/cea28bb8-6fe9-4f5c-bda4-2e3ca29559e5)
 
@@ -51,9 +51,9 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________
 *Job Search Functionality: Job seekers will be able to search for jobs using filters such as 
 job title, location, and salary range. They will also be able to save job searches for future 
-reference.
+reference.<br />
 http://localhost:3001/jobs?jobTitle=engineer&minSalary=50000&maxSalary=100000
-ex1:.
+ex1:.<br />
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/0ee21852-6604-4b42-8c44-7570fa46a599)
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/bd171a48-1fd7-4f6a-84fb-7c8cebaa5f77)
 ex2:.
@@ -73,23 +73,23 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________
 *Applying for Jobs
 
-1- CRUD ops on applications:.
-1-create =apply for a job using POST.
-http://localhost:3001/apply.
-applying and adding pdf resumes using multer, and its stored as binary data =buffer.
+1- CRUD ops on applications:.<br />
+1-create =apply for a job using POST.<br />
+http://localhost:3001/apply.<br />
+applying and adding pdf resumes using multer, and its stored as binary data =buffer.<br />
  ![image](https://github.com/masamasri01/Job-App/assets/93089580/0ab4c892-a2b4-49a9-a08d-7916ece198cc)
  ![image](https://github.com/masamasri01/Job-App/assets/93089580/4877962c-69d5-4943-a63a-847a010b69fb)
 
-2- retrieve ,GET.
+2- retrieve ,GET.<br />
 http://localhost:3001/applicaions/64675c45748f32db9b42bd5b.
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/e4da14c8-09a4-4bd2-b9ef-fc07a07c7d74)
 
-3-update ,PUT.
+3-update ,PUT.<br />
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/af0425b6-f242-41cc-b629-67d23848a8c9)
 
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/d8fcab5f-30f1-41d2-a52a-88d0170e5d2c)
 
-4- delete.
+4- delete.<br />
 ![image](https://github.com/masamasri01/Job-App/assets/93089580/937bf6e8-d9a8-44e7-b1fc-135f6aa97bc5)
 ______________________________________________________________________________________________________
 ______________________________________________________________________________________________________
