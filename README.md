@@ -1,7 +1,6 @@
 #Job-App.
 Nodejs & MongoDB.
 
-Roaa Barq , Masa Abu Odeh and Masa Masri.
 
 * npm packages used:.<br />
   1-"body-parser".<br />
